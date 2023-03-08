@@ -1,0 +1,52 @@
+.repositories {
+  font-family: sans-serif;
+}
+
+.repositories ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.repositories li {
+  margin-bottom: 10px;
+}
+
+.repositories li a {
+  color: #0366d6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.repositories li a:hover {
+  text-decoration: underline;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination a {
+  color: #0366d6;
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+.pagination a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.pagination .active {
+  font-weight: bold;
+}
+
+.grid {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  @media (min-width: 350px) and (max-width: 400px) {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
